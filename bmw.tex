@@ -1,6 +1,7 @@
 \documentclass[alan.tex]{subfiles}
 \begin{document}
-  \item \textbf{BMW CarIT GmbH}, Ulm, Germany (October 2012 - Present)
+  \item \textbf{BMW CarIT GmbH}, Ulm, Germany (October 2012 - Present)\\
+    \emph{C++, C, Python}
     \begin{my_desc}
       \item[Core Architecture Team] for the next BMW Head-Unit. (December 2014 - Present)
         \begin{my_bullets}
@@ -8,28 +9,31 @@
             included requirement elicitation, architecture design, technology reviews/decisions,
             coordination of multiple domains to evaluate and drive technical decisions and various
             technical tasks needed on different phases.
+          \item Responsible for the centralization of the systemd unit files and the system configuration, developed the
+            Yocto recipes to control the deployment on the different head unit images, wrote tests to
+            verify running configuration against specified configuration and reviewing any changes done.
           \item Drove the collection of requirements for the application framework, setting up of the team
             and designing/reviewing the framework architecture.
-          \item Drove the centralization of the systemd unit files and the system configuration, developed the
-            Yocto recipes to control the deployment on the different head unit images and wrote tests to
-            verify running configuration against specified configuration.
         \end{my_bullets}
       \item[Security Engineer] (June 2014 - January 2015)
         \begin{my_bullets}
-          \item Participated in requirement review.
-          \item Evaluated technologies/solution/architecture.
+          \item Requirement review.
+          \item Evaluated technologies to use (for example SELinux vs AppArmor) and worked on the security architecture
+            for the Head Unit.
           \item Participated in the evaluation of several suppliers and in the clarification of requirements with
             them during the supplier offer phase.
         \end{my_bullets}
       \item[Developer] for Head-Unit connectivity components (May 2013 - May 2014)
-        Participated in the re-factoring of two Linux daemons from C to C++. The re-factoring was essential
-        in order to use the daemons with some C++ generated bindings. The re-factoring was used also as an opportunity
-        to re-design the architecture of these two daemons.
-        While developing for these components I was heavily involved in training colleagues on git/gerrit workflow and C++11 features.
-      \item[Developer] for Bluetooth proof-of-concepts (October 2012 - May 2013)
+        \begin{my_bullets}
+          \item Worked in a team re-factoring of two Linux daemons from C to C++.
+            The re-factoring was used also as an opportunity to re-design the architecture of these two daemons.
+          \item While developing for these components I was heavily involved in training colleagues on git/gerrit
+              workflow and C++11 features.
+        \end{my_bullets}
+      \item[Developer] for Bluetooth (October 2012 - May 2013)
         \begin{my_bullets}
           \item Bluetooth / Bluez (C).  Worked on a proof of concept for AVRCP 1.5 for BlueZ.
-            In parallel provided a few bug fixes upstream and supported Genivi discussion to define the
+            In parallel provided bug fixes upstream and supported Genivi discussion to define the
             GENIVI Bluetooth API.
           \item Bluetooth testing framework (python). Designed and implemented a testing framework to
             test BMW specific use cases. The framework was designed to be able to support different backends and
