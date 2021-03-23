@@ -1,23 +1,41 @@
 \documentclass[alan.tex]{subfiles}
+
 \begin{document}
   \item[BEM S\&S] Patras, Greece ( January 2009 - August 2009)\\
   \emph{C++, Python, wxWidgets}
-  \begin{my_contractor}
-  Part of a team developing an application for Boundary Element Method solutions. Worked mainly on maintaining the cross-platform aspect of the application and on the development of the user interface.
-  \end{my_contractor}
+  	\begin{my_contractor}
+  	\iftoggle{showdetail}{%
+ 	 Part of a team developing an application for Boundary Element Method solutions. Worked mainly on maintaining the cross-platform aspect of the application and on the development of the user interface.
+ 	}{%
+  	Development of a wxWidget application for Boundare Element methods
+  	}
+  	\end{my_contractor}
+
   \item[Virtual Trip Ltd.] Athens, Greece (2006) \\
   \emph{ C, Oracle database, .NET Framework 2.0 }
   \begin{my_contractor}
+  \iftoggle{showdetail}{%
     Member of a small team developing a Secure Documents Issuing information system for the Hellenic National Passport Center.
     Developed a set of low-level libraries handling passport printing, database management and different UI modules for the main application.
+    }{%
+    Development of Passport issuing system
+    }
   \end{my_contractor}
   \item[Department of Electrical and Computer Engineering] U. of Patras, Greece (2004-2005)
   \begin{my_contractor}
+  \iftoggle{showdetail}{%
     LDAP design and implementation, GNU/Linux administration, wireless infrastructure setup, security infrastructures \emph{(IPTables/Snort)}, Instant Messaging and Presence Service based on Jabber.
+    }{%
+    System administrator
+    }
   \end{my_contractor}
   \item[Virtual Trip Ltd.] Athens, Greece (Summer 2004) \\
   \emph{ C, Shell scripting }
   \begin{my_contractor}
+  \iftoggle{showdetail}{%
     Member of a team developing a meteorological data converter from HPRT and PDUS to GRIB format for the Hellenic National Meteorological Service.
+    }{%
+    Developed an app for meteorological data converter
+    }
   \end{my_contractor}
 \end{document}

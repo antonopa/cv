@@ -1,50 +1,50 @@
 \documentclass[alan.tex]{subfiles}
 \begin{document}
   \item \textbf{BMW CarIT GmbH}, Ulm, Germany (October 2012 - January 2017)\\
-    \emph{C++, C, Python}
+    \emph{Architecture, C++, C, Python}
     \begin{my_desc}
       \item[Core Architecture Team] for the next BMW Head-Unit. (December 2014 - January 2017)
         \begin{my_bullets}
-          \item Responsibilities in the team include requirement elicitation, architecture design,
-            technology reviews/decisions, coordination of multiple domains to evaluate and drive technical
-            decisions and various technical tasks needed on different phases. Some notable examples are:
+        \iftoggle{showdetail}{%
+          \item Responsibilities in the team include requirement elicitation, architecture design, technology reviews/decisions, coordination of multiple domains to evaluate and drive technical decisions and various technical tasks needed on different phases. Some notable examples are:
             \begin{my_bullets}
             \item Driving technical discussions with different domains and architectural decisions/designs.
-            \item Responsible for the centralization of the systemd unit files and the system configuration,
-              developing and maintaining the Yocto recipes to control the deployment on the different head
-              unit images, writing tests to verify running configuration against specified configuration and
-              reviewing any changes done.
-            \item Collected the requirements for the BMW Head-Unit application framework, drove the decision
-                to use Qt as the core of it and subsequently worked on the initial architectural design.
+            \item Responsible for the centralization of the systemd unit files and the system configuration, developing and maintaining the Yocto recipes to control the deployment on the different head unit images, writing tests to verify running configuration against specified configuration and reviewing any changes done.
+            \item Collected the requirements for the BMW Head-Unit application framework, drove the decision to use Qt as the core of it and subsequently worked on the initial architectural design.
             \end{my_bullets}
+            }{%
+          \item Requirements elicitation, architecture design, coordination of multiple teams and domains.
+          \item systemd configuration for BMW's linux head-unit, wrote Yocto recipes and tools to maintain them.  
+          }               
         \end{my_bullets}
       \item[Security Engineer] (June 2014 - January 2015)
+      \iftoggle{showdetail}{%
         \begin{my_bullets}
           \item Requirement review.
-          \item Evaluated technologies to use (for example SELinux vs AppArmor) and worked on the security architecture
-            for the Head Unit.
-          \item Participated in the evaluation of several suppliers and in the clarification of requirements with
-            them during the supplier offer phase.
-        \end{my_bullets}
-      \item[Developer] for Head-Unit connectivity components; bluetooth device management and telephony manager (May 2013 - May 2014)
+          \item Evaluated technologies to use (for example SELinux vs AppArmor) and worked on the security architecture for the Head Unit.
+          \item Participated in the evaluation of several suppliers and in the clarification of requirements with them during the supplier offer phase.
+     \end{my_bullets}
+      }{%
+      Drove technological decisions (e.g. AppArmor vs. SELinux), evaluated suppliers on security requirements
+      }
+     
+      \item[Member] of the BMW CarIT core interview team. I was part of a team with the responsibility to review phone interviews conducted by other colleagues, schedule and organize on-site interviews and train more developers to do interviews.
+      \item[Mentoring] of a student during their internship. The student became an active part of the developing team implementing and testing different features. After completing their internship they continued with their bachelor thesis under my supervision.
+       \item[Developer] for Head-Unit connectivity components; bluetooth device management and telephony manager (October 2012 - May 2014)
+      \iftoggle{showdetail}{%
         \begin{my_bullets}
           \item Worked in a team re-factoring the two Linux daemons from C to C++.
-          \item While developing for these components I was heavily involved in training colleagues on git/gerrit
-              workflow and C++11 features.
+          \item While developing for these components I was heavily involved in training 
+          colleagues on git and gerrit workflow and C++11 features.
         \end{my_bullets}
-      \item[Developer] for Bluetooth (October 2012 - May 2013)
+        }
+      \iftoggle{showdetail}{%
         \begin{my_bullets}
         \item Bluetooth / BlueZ (C).  Worked on a proof of concept for AVRCP 1.5 for BlueZ (ver. 5).
             In parallel provided bug fixes upstream and supported GENIVI discussions to define the
             GENIVI Bluetooth API.
-          \item Bluetooth testing framework (python). Designed and implemented a testing framework to
-            test BMW specific use cases. The framework was designed to be able to support different backends and
-            Bluetooth profiles.
+          \item Bluetooth testing framework (python). Designed and implemented a testing framework to test BMW specific use cases. The framework was designed to be able to support different backends and Bluetooth profiles.
         \end{my_bullets}
-      \item[Member] of the BMW CarIT core interview team. I was part of a team with the responsibility to review phone interviews
-        conducted by other colleagues, schedule and organize on-site interviews and train more developers to do interviews.
-      \item[Mentoring] of a student during their internship. The student became an active part of the developing
-        team implementing and testing different features. After completing their internship they continued with their bachelor thesis
-        under my supervision.
+        }
     \end{my_desc}
 \end{document}
